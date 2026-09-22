@@ -48,6 +48,13 @@ html, body {
 
 #blazor-error-ui { background: #fffbeb; color: #b45309; bottom: 0; box-shadow: 0 -1px 2px rgba(15,23,42,.2); display: none; left: 0; padding: .6rem 1.25rem; position: fixed; width: 100%; z-index: 3000; }
 
+.extension-loading-content { min-width: 260px; }
+.extension-loading-mark { width: 116px; height: 116px; object-fit: contain; animation: extension-loading-pulse 2.2s ease-in-out infinite; filter: drop-shadow(0 12px 18px rgba(29,78,216,.2)); }
+.extension-loading-status { display: flex; align-items: center; justify-content: center; gap: .4rem; color: #cbd5e1; }
+.extension-loading-dot { width: 6px; height: 6px; border-radius: 50%; background: #60a5fa; box-shadow: 0 0 0 0 rgba(96,165,250,.7); animation: extension-loading-dot 1.6s infinite; }
+@keyframes extension-loading-pulse { 0%, 100% { transform: scale(.96); opacity: .84; } 50% { transform: scale(1.04); opacity: 1; } }
+@keyframes extension-loading-dot { 0% { box-shadow: 0 0 0 0 rgba(96,165,250,.7); } 70% { box-shadow: 0 0 0 7px rgba(96,165,250,0); } 100% { box-shadow: 0 0 0 0 rgba(96,165,250,0); } }
+
 @media (max-width: 768px) {
     .rz-body { margin-left: 0 !important; }
     .rz-content-container { padding: 1rem !important; }
