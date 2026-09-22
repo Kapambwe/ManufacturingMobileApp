@@ -1,0 +1,54 @@
+:root {
+    --rz-primary: #1d4ed8;
+    --rz-primary-lighter: #eff6ff;
+    --rz-secondary: #64748b;
+    --rz-success: #10b981;
+    --rz-danger: #ef4444;
+    --rz-warning: #f59e0b;
+    --mfg-navy-primary: #0f172a;
+    --mfg-card-border: #e2e8f0;
+    --mfg-touch-target: 40px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.rz-body { background: #f8fafc !important; color: #0f172a; }
+.rz-button, .rz-textbox, .rz-dropdown, button, .form-control { min-height: var(--mfg-touch-target); }
+.rz-button-text { font-weight: 600; }
+
+.rz-card, .card, .metric-card, .stat-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid var(--mfg-card-border);
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, .05);
+}
+
+.extension-auth-layout { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.5rem; background: linear-gradient(135deg, #081225 0%, #0f172a 52%, #1e3a8a 100%); }
+.extension-auth-brand { display: flex; align-items: center; gap: .55rem; margin-bottom: 1rem; color: #f8fafc; font-size: .82rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.extension-auth-brand-mark { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 9px; color: #fff; background: #1d4ed8; }
+.extension-auth-content { width: 100%; max-width: 500px; }
+.extension-auth-footer { margin-top: 1rem; color: #94a3b8; font-size: .7rem; }
+.extension-login-shell { max-width: 500px; margin: 0 auto; }
+.auth-landing-card { background: rgba(255,255,255,.97); border: 1px solid rgba(255,255,255,.15); border-radius: 2rem; box-shadow: 0 25px 50px -12px rgba(0,0,0,.45); }
+.extension-login-icon { display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 18px; color: #fff; background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%); box-shadow: 0 10px 15px -3px rgba(29,78,216,.3); font-size: 2.2rem; }
+.extension-persona-card { display: flex; align-items: center; justify-content: space-between; gap: .75rem; width: 100%; min-height: 64px; padding: 1rem; border-radius: 12px; text-align: left; cursor: pointer; background: #f8fafc; transition: transform .15s ease, box-shadow .15s ease; }
+.extension-persona-card:hover { transform: translateY(-1px); box-shadow: 0 5px 12px rgba(15,23,42,.08); }
+.extension-persona-blue { border: 1px solid #93c5fd; }
+.extension-persona-purple { border: 1px solid #c084fc; }
+.extension-persona-orange { border: 1px solid #fdba74; }
+.extension-persona-name { color: #0f172a; font-size: .95rem; font-weight: 700; }
+.extension-persona-detail { margin-top: 2px; color: #64748b; font-size: .74rem; }
+
+#blazor-error-ui { background: #fffbeb; color: #b45309; bottom: 0; box-shadow: 0 -1px 2px rgba(15,23,42,.2); display: none; left: 0; padding: .6rem 1.25rem; position: fixed; width: 100%; z-index: 3000; }
+
+@media (max-width: 768px) {
+    .rz-body { margin-left: 0 !important; }
+    .rz-content-container { padding: 1rem !important; }
+}
