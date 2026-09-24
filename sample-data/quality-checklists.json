@@ -1,0 +1,5 @@
+[
+  { "checkId": "COMMON-001", "description": "Product identity and batch label verified", "inputType": "PassFail", "isRequired": true },
+  { "checkId": "COMMON-002", "description": "Packaging and seal condition acceptable", "inputType": "PassFail", "isRequired": true },
+  { "checkId": "PET-001", "description": "Product weight", "inputType": "Numeric", "isRequired": true, "lowerLimit": 18.0, "upperLimit": 22.0, "unit": "g" }
+]

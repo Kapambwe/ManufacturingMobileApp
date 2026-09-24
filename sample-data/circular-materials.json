@@ -1,0 +1,38 @@
+[
+  {
+    "recordId": "CIRC-0001",
+    "materialName": "Cotton offcuts",
+    "sourceProcess": "Cutting line",
+    "quantityKg": 86.5,
+    "route": "Reuse",
+    "destination": "Small accessory production",
+    "recordedDate": "2026-09-22T00:00:00",
+    "status": "Recorded",
+    "notes": "Sorted by colour and stored in labelled bins.",
+    "evidenceCount": 1
+  },
+  {
+    "recordId": "CIRC-0002",
+    "materialName": "Cardboard packaging",
+    "sourceProcess": "Dispatch area",
+    "quantityKg": 145,
+    "route": "Recycle",
+    "destination": "Registered recycling collector",
+    "recordedDate": "2026-09-20T00:00:00",
+    "status": "Collected",
+    "notes": "Kept dry and separated from general waste.",
+    "evidenceCount": 1
+  },
+  {
+    "recordId": "CIRC-0003",
+    "materialName": "Wood shavings",
+    "sourceProcess": "Furniture workshop",
+    "quantityKg": 210,
+    "route": "By-product",
+    "destination": "Local briquette maker",
+    "recordedDate": "2026-09-23T00:00:00",
+    "status": "Awaiting route",
+    "notes": "Do not mix with treated timber or chemical waste.",
+    "evidenceCount": 0
+  }
+]
