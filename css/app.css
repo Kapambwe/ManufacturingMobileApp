@@ -68,3 +68,28 @@ html, body {
 .detail-grid strong { display:block; color:#0f172a; font-size:.82rem; margin-top:.2rem; text-transform:none; }
 .receipt-detail-panel { position:fixed; right:1rem; bottom:1rem; z-index:1000; width:min(520px,calc(100vw - 2rem)); max-height:calc(100vh - 2rem); overflow:auto; padding:1.1rem; background:#fff; border:1px solid #cbd5e1; border-radius:16px; box-shadow:0 20px 55px rgba(15,23,42,.2); }
 @media (max-width:800px) { .summary-grid { grid-template-columns:repeat(2,1fr); } .detail-grid { grid-template-columns:repeat(2,1fr); } }
+
+/* User Overlay & Menu */
+.fieldops-user-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1100;
+    background: rgba(15, 23, 42, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+.fieldops-user-menu {
+    position: absolute;
+    top: 56px;
+    right: 12px;
+    width: 280px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    z-index: 1101;
+    overflow: hidden;
+}
